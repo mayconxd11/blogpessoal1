@@ -13,7 +13,7 @@ export class PostagemControler{
     @Get()
     @HttpCode(HttpStatus.OK)
     findAll(): Promise<Postagem[]>{
-        return this.postagemService.fundAll(); //O controller pede pro Service puxar as informações do banco
+        return this.postagemService.findAll(); //O controller pede pro Service puxar as informações do banco
     }
 
     @Get('/:id')

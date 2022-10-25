@@ -4,7 +4,6 @@ import { Repository } from "typeorm";
 import { Usuario } from "../entities/usuario.entity";
 import { HttpException } from "@nestjs/common/exceptions";
 import { HttpStatus } from "@nestjs/common/enums";
-import { async } from "rxjs";
 import { InjectRepository } from "@nestjs/typeorm";
 
 

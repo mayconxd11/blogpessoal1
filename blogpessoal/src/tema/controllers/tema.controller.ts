@@ -2,10 +2,12 @@ import { Controller, Get } from "@nestjs/common";
 import { Body, Delete, HttpCode, Param, Post, Put, UseGuards } from "@nestjs/common/decorators";
 import { HttpStatus } from "@nestjs/common/enums";
 import { ParseIntPipe } from "@nestjs/common/pipes";
+import { ApiTags } from "@nestjs/swagger/dist/decorators";
 import { JwtAuthGuard } from "../../auth/guard/jwt-auth.guard";
 import { Tema } from "../entities/tema.entity";
 import { TemaService } from "../services/tema.services";
 
+@ApiTags('Tema')
 @UseGuards(JwtAuthGuard)
 @Controller('/tema')
 export class TemaController{

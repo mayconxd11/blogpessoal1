@@ -8,6 +8,7 @@ import { Postagem } from "../entities/postagem.entity";
 import { PostagemService } from "../services/postagem.service";
 
 
+
 @ApiTags('Postagem')
 @UseGuards(JwtAuthGuard)
 @Controller('/Postagens')

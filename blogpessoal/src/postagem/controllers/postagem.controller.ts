@@ -9,6 +9,7 @@ import { PostagemService } from "../services/postagem.service";
 
 
 
+
 @ApiTags('Postagem')
 @UseGuards(JwtAuthGuard)
 @Controller('/Postagens')

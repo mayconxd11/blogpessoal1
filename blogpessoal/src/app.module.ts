@@ -19,7 +19,7 @@ import { UsuarioModule } from './usuario/usuario.module';
     database: 'db_blogpessoal',
     entities:[Postagem,Tema,Usuario],
     synchronize:true
-  }) */,
+  }), */
    TypeOrmModule.forRoot({
     type:'postgres',
     url:process.env.DATABASE_URL,
